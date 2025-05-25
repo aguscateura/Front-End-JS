@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5cd;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #eb9b1196;
+    width: 100%;
+    font-family: "Birthstone", cursive;
+    font-size: 50px
+}
+.form{
+    background-color: #2b7e11;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.form img{
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+.form .item{
+    display: flex;
+    flex-direction: column;
+}
+.form input, textarea{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+.form input{
+    height: 30px;
+}
+.form button{
+    background-color: #eb9b11;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    padding: 2%;
+    margin-top: 3%;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+@media(max-width:656px){
+    .form{
+        width: 400px;
+    }
+    .form .item{
+        width: 300px;
+    }
+}
