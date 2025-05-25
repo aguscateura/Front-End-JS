@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles-form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <h1>¡Contactanos!</h1>
+        <div class="form">
+            <img src="../img/Logo-verde.jpg" alt="">
+            <form action="https://formspree.io/f/xdkejypd" method="POST">
+                <div class="item">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingresá tu nombre" required> <br>
+                </div>
+                <div class="item">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Ingresá tu mail" required> <br>
+                </div>
+                <div class="item">
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" rows="4" cols="50" placeholder="Escribí tu mensaje"></textarea> <br>
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
