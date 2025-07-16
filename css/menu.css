@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h2{
+    font-family: "Birthstone", cursive;
+    text-align: center;
+    font-size: 40px;
+    margin: 1%;
+    background-color: #eb9b1196;
+}
+.menu{
+    font-family: "Poppins", sans-serif;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.menu img{
+    width: 270px;
+    height: 270px;
+    border: hidden;
+    border-radius: 5px;
+}
+.producto:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.item{
+    border: 3px solid #2b7e11;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 310px;
+    height: 380px;
+    margin: 1%;
+}
+.menu button{
+    width: 270px;
+    height: 30px;
+    background-color: #eb9b11;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.menu button:hover{
+    opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:1084px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    .cards .item{
+        display: inline;
+    }
+}
+@media(max-width:858px){
+    .cards{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .item{
+        border: 3px solid #2b7e11;
+        border-radius: 20px;
+        padding: 15px;
+        width: 350px;
+        height: 350px;
+        margin: 4%;
+    }
+    .menu button{
+        margin-top: 10px;
+    }
+}

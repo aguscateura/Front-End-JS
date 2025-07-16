@@ -3,26 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles-form.css">
-    <title>Formulario</title>
+    <!-- BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ff7ac0364c.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
 </head>
 <body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="../img/Logos/Logo-verde.jpg" class="logo" alt="" width="80px" height="80px">
+        </a>
+        <nav>
+            <ul id="navbar" class="navbar">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./acerca-de.html">Acerca de</a></li>
+                <li><a href="./form-contacto.html">Contacto</a></li>
+                <li>
+                    <a href="./carrito.html">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!-- close button -->
+                <a href="#" id="close" class="close">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </a>
+            </ul>
+        </nav>
+        <!-- version responsive -->
+        <div class="mobile">
+            <a href="./carrito.html">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </a>
+            <i id="bar" class="fas fa-outdent "></i>
+        </div>
+    </header>
     <main>
         <h1>¡Contactanos!</h1>
         <div class="form">
-            <img src="../img/Logo-verde.jpg" alt="">
-            <form action="https://formspree.io/f/xdkejypd" method="POST">
+            <form action="https://formspree.io/f/xdkejypd" method="POST" id="formularioContacto">
                 <div class="item">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Ingresá tu nombre" required> <br>
+                    <input type="text" id="tuNombre" name="nombre" placeholder="Ingresá tu nombre" required> <br>
+                    <div class="texto-error"></div>
                 </div>
                 <div class="item">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Ingresá tu mail" required> <br>
+                    <input type="email" id="tuCorreo" name="email" placeholder="Ingresá tu mail" required> <br>
+                    <div class="texto-error"></div>
+                </div>
+                <div class="item">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto">
+                    <div class="texto-error"></div>
                 </div>
                 <div class="item">
                     <label for="message">Mensaje:</label>
                     <textarea name="message" rows="4" cols="50" placeholder="Escribí tu mensaje"></textarea> <br>
+                    <div class="texto-error"></div>
                 </div>
                 <div class="button">
                     <button type="submit">Enviar</button>
@@ -30,5 +72,28 @@
             </form>
         </div>
     </main>
+    <footer>
+        <h4>Lo de Viru</h4>
+        <div class="info">
+            <p><strong>Dirección:</strong> Calle 123, Provincia de Buenos Aires</p>
+            <p><strong>Horario:</strong> 14:00 - 22:00 | Viernes, Sábados y Domingos</p>
+            <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+        </div>
+        <section class="follow">
+            <div class="icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                <a href="https://www.facebook.com/?locale=es_LA"><i class='bx bxl-facebook-circle'></i></a></li>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><i class='bx bxl-whatsapp'></i></a></li>
+                <a href="https://x.com/?lang=es"><i class="bx bxl-twitter"></i></a></li>
+            </div>
+            
+        </section>
+        <div class="copyright">
+            <p>© 2025, Cateura Agustina | Lo de Viru</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/contacto.js"></script>
 </body>
 </html>

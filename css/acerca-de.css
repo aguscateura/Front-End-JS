@@ -1,0 +1,69 @@
+h2{
+    font-family: "Birthstone", cursive;
+    text-align: center;
+    font-size: 40px;
+    margin: 1%;
+    background-color: #eb9b1196;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.nosotros{
+    background-color: #c4ffb2ec;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1%;
+    text-align: center;
+    font-size: 15px;
+}
+.reseñas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1);
+    place-items: center;
+}
+.card-reseñas{
+    border: 3px #eb9b11 solid;
+    border-radius: 20px;
+    background-color: #eb9b1125;
+    padding: 3%;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+    height: 250px;
+    margin: 2%;
+}
+.card-reseñas h4{
+    margin-bottom: 15px;
+}
+.card-reseñas:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:1084px){
+    .reseñas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        margin: 3%;
+    }
+    .card-reseñas{
+        width: 70%;
+    }
+}
+@media(max-width:430px){
+    .card-reseñas{
+        font-size: 13px;
+    }
+    .card-reseñas h4{
+        margin-bottom: 10px;
+    }
+}

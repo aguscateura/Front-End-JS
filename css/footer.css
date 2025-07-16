@@ -1,0 +1,110 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b7e11;
+
+    & h4 {
+        font-family: "Birthstone", cursive;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        margin-right: 60px;
+    }
+
+    & p {
+        font-size: 13px;
+        margin: 0 0 8px 0;
+    }
+
+    .follow {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        .icons{
+            grid-column: 2;
+            display: flex;
+        }
+
+        & a {
+            color: #eb9b11;
+            margin: 0px 5px 0px 5px;
+        }
+    }
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #3bcf0e;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Estilos Responsive para Footer */
+@media (max-width: 1200px) {
+    footer {
+        padding: 20px 10px;
+        
+        .info {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        padding: 20px 10px;
+
+        .info {
+            margin-bottom: 25px;
+            margin-right: 0px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .copyright {
+            margin-top: 20px;
+        }
+        .info{
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        flex-direction: column;
+
+        .info {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .copyright {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+    }
+
+}

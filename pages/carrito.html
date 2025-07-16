@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <!-- BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ff7ac0364c.js" crossorigin="anonymous"></script>
+    <title>Mi pedido</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="../img/Logos/Logo-verde.jpg" class="logo" alt="" width="80px" height="80px">
+        </a>
+        <nav>
+            <ul id="navbar" class="navbar">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./acerca-de.html">Acerca de</a></li>
+                <li><a href="./form-contacto.html">Contacto</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <!-- close button -->
+                <a href="#" id="close" class="close">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </a>
+            </ul>
+        </nav>
+        <!-- version responsive -->
+        <div class="mobile">
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </a>
+            <i id="bar" class="fas fa-outdent "></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- tabla productos -->
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>ELIMINAR</td>
+                        <td>IMAGEN</td>
+                        <td>PRODUCTO</td>
+                        <td>PRECIO</td>
+                        <td>CANTIDAD</td>
+                        <td>SUBTOTAL</td>
+                    </tr>
+                </thead>
+                <tbody id="tabla_carrito">
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                    <tr>
+                        <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
+                        <td><img src="" alt="Cartoon Astronaut T-Shirts"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- aplicar cupon / total del carrito -->
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Aplicar Cupón</h3>
+                <div>
+                    <input type="text" placeholder="Ingresa tu cupón">
+                    <button class="normal">Aplicar</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Total del Carrito</h3>
+                <table>
+                    <tr>
+                        <td>Subtotal del Carrito</td>
+                        <td id="total">$335</td>
+                    </tr>
+                    <tr>
+                        <td>Envío</td>
+                        <td>Gratis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong id="total">$335</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Confirmar pedido</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Lo de Viru</h4>
+        <div class="info">
+            <p><strong>Dirección:</strong> Calle 123, Provincia de Buenos Aires</p>
+            <p><strong>Horario:</strong> 14:00 - 22:00 | Viernes, Sábados y Domingos</p>
+            <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+        </div>
+        <section class="follow">
+            <div class="icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                <a href="https://www.facebook.com/?locale=es_LA"><i class='bx bxl-facebook-circle'></i></a></li>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><i class='bx bxl-whatsapp'></i></a></li>
+                <a href="https://x.com/?lang=es"><i class="bx bxl-twitter"></i></a></li>
+            </div>
+            
+        </section>
+        <div class="copyright">
+            <p>© 2025, Cateura Agustina | Lo de Viru</p>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+    <script src="../script/carrito.js"></script>
+</body>
+</html>
